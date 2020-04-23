@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+		<script src="config.js"></script>
+		
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title></title>
+	</head>
+	<body>
+		<section class="hero is-primary">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">
+						Property List
+					</h1>
+					<h2 class="subtitle">
+						See all the houses you want!
+					</h2>
+				</div>
+			</div>
+		</section>
+
+		<div class="container property-filter">
+			<p class="title is-4">Filter:</p>
+			<button value="vilnius" class="button is-active">Vilnius</button>
+			<button value="kaunas" class="button">Kaunas</button>
+			<button value="klaipėda" class="button">Klaipėda</button>
+
+			<a class="button is-primary is-pulled-right" href="/add.html">Add property +</a>
+		</div>
+
+	</body>
+</html>

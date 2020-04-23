@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+		<script src="config.js"></script>
+		<script src="index.js" defer></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Egzaminas</title>
+	</head>
+	<body>
+		<section class="hero is-primary">
+			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">
+						Login or Register
+					</h1>
+					<h2 class="subtitle">
+						Use this page to euther login or register to our system
+					</h2>
+				</div>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="columns">
+				<form name="login" class="column is-two-fifths">
+					<div class="notification is-hidden" id="login-notification">
+						<button class="delete" id="login-notification-remove"></button>
+					</div>
+
+					<p class="title is-4">Login</p>
+					<div class="field">
+						<label class="label" for="email">Email</label>
+						<p class="control">
+							<input
+								class="input"
+								type="email"
+								name="email"
+								placeholder="Email"
+								required
+							/>
+						</p>
+					</div>
+					<div class="field">
+						<label class="label" for="password">Password</label>
+						<p class="control">
+							<input
+								class="input"
+								type="password"
+								name="password"
+								placeholder="Password"
+								required
+							/>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control">
+							<button class="button is-success">
+								Login
+							</button>
+						</p>
+					</div>
+				</form>
+
+				<form name="register" class="column is-two-fifths">
+					<div class="notification is-hidden" id="register-notification">
+						<button class="delete" id="register-notification-remove"></button>
+					</div>
+
+					<p class="title is-4">Register</p>
+					<div class="field">
+						<label class="label" for="email">Email</label>
+
+						<p class="control">
+							<input
+								class="input"
+								type="email"
+								name="email"
+								placeholder="Email"
+								required
+							/>
+						</p>
+					</div>
+					<div class="field">
+						<label class="label" for="password">Password</label>
+
+						<p class="control">
+							<input
+								class="input"
+								type="password"
+								name="password"
+								placeholder="Password"
+								required
+							/>
+						</p>
+					</div>
+					<div class="field">
+						<p class="control">
+							<button class="button is-success">
+								Register
+							</button>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

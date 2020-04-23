@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <script src="config.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Add your property for sale
+                </h1>
+                <h2 class="subtitle">
+                    Yes, you can sell where you live and get cash!
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="container add-property">
+        <form action="" name="add">
+            <div class="notification is-hidden" id="add-notification">
+               
+            </div>
+            <p class="title is-5">Add Property</p>
+
+            <div class="field">
+                <label class="label" for="img">Img</label>
+                <div class="control">
+                    <input class="input" type="text" name="img" placeholder="image link" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="price">Price</label>
+                <div class="control">
+                    <input class="input" type="number" name="price" placeholder="50000€" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="description">description</label>
+                <div class="control">
+                    <textarea class="textarea" name="description" 
+                        required></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="city">City</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Vilnius</option>
+                            <option>Kaunas</option>
+                            <option>Klaipėda</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-primary">Add property</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
